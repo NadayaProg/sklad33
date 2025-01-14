@@ -1,0 +1,251 @@
+.photo-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo-item {
+  position: relative;
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.photo-item:first-child {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-end: 4;
+  }
+}
+
+.photo-item::before {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #D6D6D6;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photo-item:last-child::after {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #D6D6D6;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photo-item-title {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: start;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    padding-top: 5px;
+  }
+}
+
+.photo-item-raiting {
+  position: relative;
+}
+
+.photo-item-raiting-text {
+  margin: 0;
+  padding-left: 35px;
+  padding-top: 5px;
+  font-weight: 700;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+    padding-left: 77px;
+  }
+}
+
+.text-class {
+  @media (min-width: @tablet-width) {
+    padding-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 261px;
+    padding-top: 17px;
+  }
+}
+
+.photo-item-raiting-text::before {
+  width: 23px;
+  height: 21px;
+  content: "";
+  position: absolute;
+  background: url("../images/like-icon.svg") no-repeat 0 0;
+  left: 2px;
+
+  @media (min-width: @tablet-width) {
+    z-index: 150;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../images/like-icon-white.svg") no-repeat 0 0;
+    left: 45px;
+  }
+}
+
+.text-class::before {
+  @media (min-width: @tablet-width) {
+    left: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 229px;
+  }
+}
+
+.photo-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media (min-width: @tablet-width) {
+    background-color: #F2F2F2;
+    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-flow: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    @stats-shift: -80px;
+    top: @stats-shift;
+    margin-bottom: @stats-shift;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding-bottom: 11px;
+    padding-top: 17px;
+  }
+}
+
+.info-road {
+  @media (min-width: @tablet-width) {
+    background-color: #EAEAEA;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+}
+
+.photo-item-image {
+  display: block;
+  width: 100%;
+}
+
+.photo-item-author {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: start;
+  }
+}
+
+.photo-catalog-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.photo-catalog-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  position: relative;
+  text-align: center;
+}
+
+.catalog-contact {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.catalog-contact-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+.catalog-contact--phone {
+  background-image: url(../images/phone-calling.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.catalog-contact--mail {
+  background-image: url(../images/mail.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.catalog-contact--adress {
+  background-image: url(../images/location.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.photo-catalog--info {
+  padding-top: 20px;
+}
+
+.catalog-contact--link {
+  font-size: 16px;
+}
+
+.catalog-contact--description {
+  font-size: 16px;
+  text-align: center;
+}

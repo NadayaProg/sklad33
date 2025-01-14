@@ -1,0 +1,80 @@
+.video-list {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.video-item {
+  margin-bottom: 20px;
+}
+
+.video-item-description {
+  margin: 0;
+  padding-left: 23px;
+  padding-right: 22px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.video-item-image {
+  position: relative;
+}
+
+.video-polygon {
+  position: absolute;
+  background: url("../images/polygon.svg") no-repeat 0 0;
+  width: 48px;
+  height: 54px;
+  top: 35%;
+  left: 45%;
+
+  @media (min-width: @tablet-width) {
+    left: 46%;
+    top: 45%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 375px;
+    top: 220px;
+  }
+}
+
+.video-item-image-road {
+  width: 100%;
+}
+
+.video-item.title {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
+}

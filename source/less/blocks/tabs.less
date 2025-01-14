@@ -1,0 +1,52 @@
+.nav-tabs {
+  display: flex;
+}
+
+.nav-tab {
+  font-size: 14px;
+  padding: 10px 10px;
+  border: 2px solid#eeeeee;
+  border-bottom: 0;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+    padding: 20px 30px 20px 30px;
+    font-size: 20px;
+  }
+}
+
+.nav-tab.active {
+  background: #eeeeee;
+  cursor: default;
+}
+
+.tab-content {
+  font-size: 20px;
+  background: #eeeeee;
+}
+
+.tab-pane {
+  display: none;
+  padding: 20px;
+}
+
+.tab-pane.active {
+  display: flex;
+}
+
+.tabs-content-list {
+  font-size: 14px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+.tabs-content-line {
+  padding-bottom: 18px;
+}

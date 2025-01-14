@@ -1,0 +1,18 @@
+.map {
+  margin-bottom: 8px;
+}
+
+.map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  background-image: url("../images/map-mobile1.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../images/map-tablet1.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../images/map-desktop1.jpg");
+  }
+}

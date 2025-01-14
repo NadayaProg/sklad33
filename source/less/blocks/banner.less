@@ -1,0 +1,75 @@
+.banner {
+  text-align: center;
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 67px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: #747272;
+  background-image: url("../images/sklad3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 119px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: url("../images/sklad4.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/sklad4.jpg");
+      background-size: 1338px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 110px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.banner::after {
+  left: 50%;
+  bottom: -31px;
+  transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 56px;
+  background: url("../images/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+
+  @media (min-width: @tablet-width) {
+    background: url("../images/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+    bottom: 0;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../images/intro-triangle.svg") no-repeat 0 0;
+    width: 1200px;
+  }
+}
+
+.banner__image {
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+}
+
+@keyframes stretching {
+  0% {
+    background-color: #FFFFFF;
+  }
+  100% {
+    background-color: #81B3D2;
+  }
+}
+
+.banner__image {
+  animation-name: stretching;
+  animation-duration: 2s;
+}

@@ -1,0 +1,82 @@
+.button:hover {
+  background-color: #669EC0;
+}
+
+.button:active {
+  background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
+.control:hover .control-mark {
+  background-color: #E5E5E5;
+}
+
+.control:active .control-mark {
+  background-color: #D5D5D5;
+}
+
+.control:active .control-input[type="radio"]:checked+.control-mark::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.social-link:hover {
+  color: #669EC0;
+}
+
+.social-link:active {
+  color: #5496BD;
+}
+
+.developer__link:hover {
+  color: #5496BD;
+}
+
+.developer__link:active {
+  color: #B3B3B3;
+}
+
+.site-list__link:hover {
+  @media (max-width: @mobile-width-only) {
+    background-color: #669EC0;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: #81B3D2;
+  }
+}
+
+.site-list__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  @media (max-width: @mobile-width-only) {
+    background-color: #5496BD;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.list__block-field:hover {
+  outline: none;
+  background-color: #E5E5E5;
+}
+
+.list__block-field:active {
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  outline: 4px solid #E5E5E5;
+}

@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.page-container {
+  @media (min-width: @desktop-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  background-color: #81B3D2;
+  border: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.description {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+input {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.description-block {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+}
